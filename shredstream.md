@@ -1,0 +1,23 @@
+# Introduction to 0slot ShredStream
+
+## About 0slot ShredStream
+0slot ShredStream is a value-added service provided by 0slot for top traders or platforms. By using 0slot ShredStream, users can access Shred data on Solana with extremely low latency. This service is particularly suitable for scenarios requiring real-time data, such as high-frequency trading, validation operations, and RPC nodes. Feedback from multiple top traders indicates that 0slot ShredStream is faster than other ShredStream services, with an average lead time of 1-5 milliseconds.
+
+## Implementation Principle
+0slot operates a number of validator nodes and collaborates with a large number of other validator nodes to collect Shreds from all these nodes. The collected Shreds are analyzed and merged using optimized algorithms, then transmitted efficiently through AWS Direct Connect for global distribution.
+
+## Advantages of 0slot ShredStream
+- **Ultra-Low Latency**: Offers an average lead of 1-5 milliseconds compared to other ShredStream services.
+- **Stable and Reliable Service**: Proven by real-world usage from numerous top traders.
+- **Zero Configuration**: Users only need to provide an IP and port to receive Shreds.
+
+## How to Access and Use 0slot ShredStream
+- **Restricted Access**: 0slot ShredStream does not offer open registration. Due to resource limitations and to ensure service quality, it is only available for purchase to users of our on-chain services.
+- **Technical Requirements**: Users need to have certain capabilities for integrating and developing with ShredStream.
+- **Setup**: Provide 0slot with an IP and port to receive the Shred data stream.
+
+## Contact Us
+For any inquiries, please contact us:
+- **Discord Support**: [Join our community](https://discord.com/invite/Qd6txfyS)  
+- **Twitter/X**: [Follow @0slot_trade](https://x.com/0slot_trade)  
+- **Telegram**: [Message @kurt0slot](https://t.me/kurt0slot)  
