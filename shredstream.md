@@ -11,10 +11,21 @@
 - **Stable and Reliable Service**: Proven by real-world usage from numerous top traders.
 - **Zero Configuration**: Users only need to provide an IP and port to receive Shreds.
 
+**Note:**
+- The transmission speed of ShredStream is related to the current network status, user's server location, and network conditions; there is no absolute fastest;
+- Using 0slot ShredStream is generally 20-40ms faster than not using any ShredStream service;
+- It is recommended that users, in addition to 0slot ShredStream, also use other services like Jito and bloXroute's ShredStream simultaneously to achieve overall faster speeds;
+- According to our users' tests and usage, 0slot ShredStream is on average about 20% faster than those of Jito and bloXroute.
+
 ## How to Access and Use 0slot ShredStream
 - **Restricted Access**: 0slot ShredStream does not offer open registration. Due to resource limitations and to ensure service quality, it is only available for purchase to users of our on-chain services.
 - **Technical Requirements**: Users need to have certain capabilities for integrating and developing with ShredStream.
 - **Setup**: Provide 0slot with an IP and port to receive the Shred data stream.
+
+## How to Test and Compare the Speed of Different ShredStreams
+To test the latency of different ShredStreams, it's actually quite simple. On the same IP (to avoid the impact of different networks on the test results), use different ports to receive ShredStreams from different service providers and see which provider's identical Shred arrives first.
+
+There is no need to parse the received Shred data; just hash the Shred to identify the same Shred and record the time it was received. By comparing the arrival times of Shreds with the same hash value, you can determine which provider's ShredStream has faster speed and lower latency.
 
 ## Contact Us
 For any inquiries, please contact us:
