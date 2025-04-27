@@ -79,26 +79,22 @@ async def send_solana_transaction(api_key, private_key, tip_key, to_public_key, 
     client_for_blockhash = AsyncClient(f"https://api.mainnet-beta.solana.com")
     client_for_send = AsyncClient(f"https://de.0slot.trade?api-key=" + api_key)
 
-    # 获取最新的区块哈希值
     latest_blockhash = await client_for_blockhash.get_latest_blockhash()
     await client_for_blockhash.close()
 
-    # 创建发送方和接收方的密钥对和公钥
     sender = Keypair.from_bytes(base58.b58decode(private_key))
     receiver = Pubkey.from_string(to_public_key)
     tip_receiver = Pubkey.from_string(tip_key)
 
-    # 创建转账指令
     main_transfer_instruction = transfer(TransferParams(from_pubkey=sender.pubkey(), to_pubkey=receiver, lamports=1))
-    tip_transfer_instruction = transfer(TransferParams(from_pubkey=sender.pubkey(), to_pubkey=tip_receiver, lamports=100000))
+    tip_transfer_instruction = transfer(TransferParams(from_pubkey=sender.pubkey(), to_pubkey=tip_receiver, lamports=1000000))
 
-    # 创建消息和交易
     message = Message.new_with_blockhash([main_transfer_instruction, tip_transfer_instruction], payer=sender.pubkey(), blockhash=latest_blockhash.value.blockhash)
     transaction = Transaction.new_unsigned(message)
     transaction.sign([sender], latest_blockhash.value.blockhash)
 
     try:
-        # 如果启用 Keep-Alive，定期检查连接状态
+        # If Keep Alive is enabled, regularly check the connection status
         if keep:
             await client_for_send.is_connected()
         start_time = time.perf_counter()
