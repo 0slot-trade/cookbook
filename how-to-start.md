@@ -36,7 +36,9 @@ curl -X POST 'http://ny.0slot.trade?api-key=$TOKEN' \
 3) We provide faster servers in different locations for users. Please test and select the most suitable server from the list below, then replace it in the URL above:  
    - **NY**:  ny1.0slot.trade  
    - **Frankfurt**:  de1.0slot.trade  
-   - **AMS NL**:  ams1.0slot.trade  
+   - **AMS NL**:  ams1.0slot.trade
+   - **Tokyo**:  jp.0slot.trade
+   - **Los Angeles**: la.0slot.trade
 
 ## 4. Error Codes  
 - **API Key Expired**
