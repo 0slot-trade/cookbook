@@ -18,7 +18,10 @@ to:
 https://ny.0slot.trade?api-key=YOUR_API_KEY&anti-mev=true
 ```
 
-*(Please replace the domain and `YOUR_API_KEY` with your actual configuration.)*
+### Notes:
+
+1. Please adjust the domain and `YOUR_API_KEY` according to your actual configuration.
+2. The value of `anti-mev` **must be `true`** — other values such as `"1"` or `"yes"` are **not valid**.
 
 ---
 
