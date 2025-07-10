@@ -22,19 +22,20 @@
 - **Technical Requirements**: Users need to have certain capabilities for integrating and developing with ShredStream.
 - **Setup**: Provide 0slot with an IP and port to receive the Shred data stream.
 
-**Prerequisites**
+### Receiving and Handling Shred Data from 0slot
+0slot will automatically sends the shred data stream to the **IP and port** you provided.
+When you receive the data, you can parse and process it using the method you are familiar with, then decide how to use it based on your business requirements.
 
-To utilize the processing capabilities of Jito ShredStream Proxy for receiving, parsing, and forwarding Shreds, 0slot ShredStream recommends direct integration with Jito ShredStream Proxy. Users must be familiar with and have successfully deployed Jito ShredStream Proxy. If not, please refer to the following documentation to learn and deploy Jito ShredStream Proxy:  
-[Jito Labs - Low Latency Block Updates (Shredstream)](https://docs.jito.wtf/lowlatencytxnfeed/)
+If you have experience developing with **Jito ShredStream**, this will be very straightforward —
+**0slot's shred data packets are fully compatible with Jito's shred data packets**.
+That means you can handle 0slot’s data using the same approach as with **Jito ShredStream**, which is called **Jito ShredStream Proxy**.
 
-### The Details of Using 0slot ShredStream
-- Jito ShredStream Proxy takes port **20000** by default on the local machine to receive Shred data sent from the Jito server.
-- 0slot Shred data packets are fully compatible with Jito's Shred data packets. Therefore, provide the same port to 0slot, and 0slot's Shreds will automatically be sent to that port.
-- Upon receiving Shreds, Jito ShredStream Proxy will forward them unchanged to the **TVU port**, resulting in lower latency for Shred data received at the TVU port.
-- Additionally, Jito ShredStream Proxy creates a gRPC service on the local **port 9999** to parse Shred data. Anyone connecting to this port can access the parsed **unprocessed-tx** data. Users can develop various trading applications, such as backrun arbitrage, based on their business needs.
-- Parsing Shreds with gRPC:
-To parse Shreds and obtain unprocessed transactions (unprocessed-tx) using gRPC, refer to the following code example:  
-[Jito Labs - Examples of Deshred](https://github.com/jito-labs/shredstream-proxy/blob/master/examples/deshred.rs)
+Please refer to the following documentation to learn how to deploy the Jito ShredStream Proxy:
+👉 [Jito Labs - Low Latency Block Updates (Shredstream)](https://docs.jito.wtf/lowlatencytxnfeed/)
+
+> **Note:**
+> You can also choose alternative methods to receive and process 0slot shredstream data.
+> The use of the **Jito ShredStream Proxy** is **not mandatory**, and the approach depends on your development preferences and experience.
 
 ## How to Test and Compare the Speed of Different ShredStreams
 To test the latency of different ShredStreams, it's actually quite simple. On the same IP (to avoid the impact of different networks on the test results), use different ports to receive ShredStreams from different service providers and see which provider's identical Shred arrives first.
