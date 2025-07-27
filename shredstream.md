@@ -18,13 +18,14 @@
 - According to our users' tests and usage, 0slot ShredStream is on average about 20% faster than those of Jito and bloXroute.
 
 ## How to Access and Use 0slot ShredStream
+
 - **Restricted Access**: 0slot ShredStream does not offer open registration. Due to resource limitations and to ensure service quality, it is only available for purchase to users of our on-chain services.
 - **Technical Requirements**: Users need to have certain capabilities for integrating and developing with ShredStream.
-- **Setup**: Provide 0slot with an IP and port to receive the Shred data stream.
+- **Setup**: Contact us to get your authorization key. Use our open-source tool: **shred-zdn** (See: https://github.com/0slot-trade/shred-zdn) to quickly access 0slot's shred data.
 
 ### Receiving and Handling Shred Data from 0slot
-0slot will automatically sends the shred data stream to the **IP and port** you provided.
-When you receive the data, you can parse and process it using the method you are familiar with, then decide how to use it based on your business requirements.
+
+0slot is **only responsible** for delivering shred data to you with minimal latency. The usage of the shred data, including parsing it and applying it to specific business scenarios, must be developed and implemented by the user.
 
 If you have experience developing with **Jito ShredStream**, this will be very straightforward —
 **0slot's shred data packets are fully compatible with Jito's shred data packets**.
@@ -34,7 +35,6 @@ Please refer to the following documentation to learn how to deploy the Jito Shre
 👉 [Jito Labs - Low Latency Block Updates (Shredstream)](https://docs.jito.wtf/lowlatencytxnfeed/)
 
 > **Note:**
-> You can also choose alternative methods to receive and process 0slot shredstream data.
 > The use of the **Jito ShredStream Proxy** is **not mandatory**, and the approach depends on your development preferences and experience.
 
 ## How to Test and Compare the Speed of Different ShredStreams
