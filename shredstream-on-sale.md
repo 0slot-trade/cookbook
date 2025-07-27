@@ -18,11 +18,12 @@ For more detailed information, refer to:
 
 ## 2. Delivery Method
 
-Users only need to provide the **IP and port** of the server where they want to receive Shred data.  
-0slot will stream the shred data to the provided **IP and port** from 0slot's **nearest server** .
+- Contact us to get your authorization key.
+- Use our open-source tool: **shred-zdn**  (See: [https://github.com/0slot-trade/shred-zdn](https://github.com/0slot-trade/shred-zdn)) to quickly access 0slot's shred data.
 
 ## 3. Pricing
 
+We charge based on the number of IP addresses you need to use with **shred-zdn** to receive shred data. That is:
 - **2 SOL per month per IP**
 - **10% discount** for 3 or more IPs
 - **20% discount** for 5 or more IPs
