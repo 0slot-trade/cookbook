@@ -10,7 +10,7 @@ This service is particularly suitable for scenarios requiring real-time data, su
 - Validator operations
 - RPC nodes
 
-Feedback from multiple top traders indicates that **0slot ShredStream is faster** than other similar services, with an average lead time of **1–5 milliseconds**.
+After testing by many users, 0slot Shred is considered to have certain advantages over other shredstream services. However, since each user’s network conditions and server performance may vary, we recommend that users conduct their own tests and choose the shred service that proves advantageous based on actual results.
 
 For more detailed information, refer to:  
 👉 [Introduction to 0slot ShredStream](https://github.com/0slot-trade/cookbook/blob/main/shredstream.md)
