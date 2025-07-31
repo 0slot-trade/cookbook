@@ -19,7 +19,7 @@ For more detailed information, refer to:
 ## 2. Delivery Method
 
 - Contact us to get your authorization key.
-- Use our docker tool: **shred-zdn**  (See: [https://github.com/0slot-trade/shred-zdn](https://hub.docker.com/r/0slot/shred-zdn) to quickly access 0slot's shred data.
+- Use our docker tool: **shred-zdn** See: [https://github.com/0slot-trade/shred-zdn](https://hub.docker.com/r/0slot/shred-zdn) to quickly access 0slot's shred data.
 
 ## 3. Pricing
 
