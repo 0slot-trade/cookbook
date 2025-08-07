@@ -1,53 +1,62 @@
-# 0slot ShredStream On Sale
+# 0slot ShredStream - Now Available
 
 ## 1. About 0slot ShredStream
 
-**0slot ShredStream** is a value-added service provided by **0slot** for top traders or platforms. By using 0slot ShredStream, users can access **Shred data on the Solana blockchain** with ultra-low latency.
+**0slot ShredStream** is a premium service designed for professional traders and platforms operating on Solana. This service provides **ultra-low latency access to Shred data**, making it ideal for performance-sensitive applications.
 
-This service is particularly suitable for scenarios requiring real-time data, such as:
-
-- High-frequency trading (HFT)
+### Key Use Cases:
+- High-frequency trading (HFT) systems
 - Validator operations
-- RPC nodes
+- RPC node infrastructure
 
-After testing by many users, 0slot Shred is considered to have certain advantages over other shredstream services. However, since each user’s network conditions and server performance may vary, we recommend that users conduct their own tests and choose the shred service that proves advantageous based on actual results.
+**Performance Note:**
+While our testing shows 0slot ShredStream outperforms competing services, actual performance may vary based on your network conditions and server configuration. We recommend conducting your own benchmarks to verify the advantages in your specific environment.
 
-For more detailed information, refer to:  
-👉 [Introduction to 0slot ShredStream](https://github.com/0slot-trade/cookbook/blob/main/shredstream.md)
+For technical details:
+👉 [0slot ShredStream Technical Documentation](https://github.com/0slot-trade/cookbook/blob/main/shredstream.md)
 
+## 2. Service Delivery Options
 
-## 2. Delivery Method
+We offer two convenient deployment methods:
 
-- Contact us to get your authorization key.
-- Use our docker tool: **shred-zdn** See: [https://github.com/0slot-trade/shred-zdn](https://hub.docker.com/r/0slot/shred-zdn) to quickly access 0slot's shred data.
+1. **Zero-Configuration Delivery**
+   - Simply provide your IP address and port
+   - We handle all transmission setup
+   - **Pricing:** 4 SOL/month per IP
 
-## 3. Pricing
+2. **Docker Container Deployment**
+   - Lightweight, pre-configured Docker solution
+   - Available image: `0slot/shred-zdn` ([Docker Hub](https://hub.docker.com/r/0slot/shred-zdn))
+   - **Pricing:** 2 SOL/month per IP
 
-We charge based on the number of IP addresses you need to use with **shred-zdn** to receive shred data. That is:
-- **2 SOL per month per IP**
-- **10% discount** for 3 or more IPs
-- **20% discount** for 5 or more IPs
+**Volume Discounts:**
+- 10% discount for 3+ IPs
+- 20% discount for 5+ IPs
 
+## 3. Pricing Overview
 
-## 4. Trial Policy
+| Delivery Method       | Monthly Rate | Volume Discounts | Trial Option | Refund Policy |
+|-----------------------|--------------|------------------|--------------|---------------|
+| Zero-Configuration    | 4 SOL/IP     | Available        | Yes          | Pro-rated     |
+| Docker-Based          | 2 SOL/IP     | Available        | Yes          | Pro-rated     |
 
-- Existing 0slot users (with at least **one-week usage of 0slot's service**) can get a **free 3-day trial** (up to 3 IPs during the trial).
-- Trials are **not available** to new users who have never used 0slot services before.
+## 4. Trial Program
 
+- **Eligibility:** Current 0slot users with ≥1 week of service history
+- **Duration:** 3-day free trial (max 3 IPs)
+- **New users:** Trial not available for first-time customers
 
-## 5. Refund Policy
+## 5. Satisfaction Guarantee
 
-If you are **not satisfied** with 0slot ShredStream's performance, you may request a refund at any time.  
-We will refund the unused portion of the subscription.
+We stand behind our service with a fair refund policy:
+- Request a refund at any time for unsatisfactory performance
+- Receive a pro-rated refund for unused service
+- **Example:** Cancel after 15 days of a 2 SOL/month plan → 1 SOL refund
 
-> Example: If you purchased one IP for a month (2 SOL), and you request a refund after 15 days, we will refund **1 SOL**.
+## 6. Getting Started
 
+Ready to experience 0slot ShredStream? Contact us through:
 
-## 6. How to Purchase
-
-If you're interested in 0slot ShredStream, please contact us:
-
-- **Telegram**: [Message @Emily0slot](https://t.me/Emily0slot)
-- **Discord Support**: Add `emily0slot` as a friend and get in touch
-- **Twitter/X**: [Follow @0slot_trade](https://x.com/0slot_trade)  
-
+- **Telegram:** [@Emily0slot](https://t.me/Emily0slot)
+- **Discord:** Add `emily0slot` (DM available)
+- **Twitter:** [@0slot_trade](https://x.com/0slot_trade)

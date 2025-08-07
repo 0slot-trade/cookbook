@@ -11,19 +11,41 @@ After testing by many users, 0slot Shred is considered to have certain advantage
 ## Advantages of 0slot ShredStream
 - **Ultra-Low Latency**: Offers an average lead of 1-5 milliseconds compared to other ShredStream services.
 - **Stable and Reliable Service**: Proven by real-world usage from numerous top traders.
-- **Zero Configuration**: Users only need to provide an IP and port to receive Shreds.
+- **Flexible Integration**:
+  - *Zero-Config Option*: Just provide an IP+port to start receiving Shreds instantly
+  - *Containerized Deployment*: Pre-configured Docker image for simplified setup (`0slot/shred-zdn` [Docker Hub](https://hub.docker.com/r/0slot/shred-zdn))
+- **Protocol Compatibility**: Fully compatible with Jito ShredStream implementations for easy migration.
 
 **Note:**
 - The transmission speed of ShredStream is related to the current network status, user's server location, and network conditions; there is no absolute fastest;
 - Using 0slot ShredStream is generally 20-40ms faster than not using any ShredStream service;
 - It is recommended that users, in addition to 0slot ShredStream, also use other services like Jito and bloXroute's ShredStream simultaneously to achieve overall faster speeds;
-- According to our users' tests and usage, 0slot ShredStream is on average about 20% faster than those of Jito and bloXroute.
 
 ## How to Access and Use 0slot ShredStream
 
 - **Restricted Access**: 0slot ShredStream does not offer open registration. Due to resource limitations and to ensure service quality, it is only available for purchase to users of our on-chain services.
-- **Technical Requirements**: Users need to have certain capabilities for integrating and developing with ShredStream.
-- **Setup**: Contact us to get your authorization key. Use our open-source tool: **shred-zdn** (See: https://github.com/0slot-trade/shred-zdn) to quickly access 0slot's shred data.
+
+### Delivery Methods:
+
+1. **Zero Configuration Delivery**
+   - Simply provide an IP address and port to receive Shreds directly
+   - Minimal setup required - our service handles all transmission
+
+2. **Docker-Based Delivery**
+   - Run our pre-configured Docker container for streamlined integration
+   - Image: `0slot/shred-zdn` (Available on [Docker Hub](https://hub.docker.com/r/0slot/shred-zdn))
+
+### Access Requirements:
+- **Restricted Availability**: Service is exclusively offered to users of our on-chain products
+- **Technical Capability**: Users should have integration/development experience with ShredStream protocols
+
+### Setup Instructions:
+1. Choose your preferred delivery method:
+   - For IP delivery: Provide your receiving endpoint
+   - For Docker:
+     - Contact us to obtain your authorization credentials
+     - Configure and deploy the shred-zdn container
+3. Implement your Shred processing logic (compatible with Jito's implementation)
 
 ### Receiving and Handling Shred Data from 0slot
 
@@ -43,6 +65,8 @@ Please refer to the following documentation to learn how to deploy the Jito Shre
 To test the latency of different ShredStreams, it's actually quite simple. On the same IP (to avoid the impact of different networks on the test results), use different ports to receive ShredStreams from different service providers and see which provider's identical Shred arrives first.
 
 There is no need to parse the received Shred data; just hash the Shred to identify the same Shred and record the time it was received. By comparing the arrival times of Shreds with the same hash value, you can determine which provider's ShredStream has faster speed and lower latency.
+
+ShredStreams does not have an absolute advantage; it determines relative dominance based on the percentage of shreds that arrive first.
 
 ## Contact Us
 For any inquiries, please contact us:
