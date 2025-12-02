@@ -3,20 +3,16 @@
 0slot supports three different Transaction Submission methods:
 
 - **json-tx**  
-  Reference: *How to start with 0slot?*  
-  (https://github.com/0slot-trade/cookbook/blob/main/how-to-start.md)
+  Reference: [**How to start with 0slot?**](https://github.com/0slot-trade/cookbook/blob/main/how-to-start.md)
 
 - **plain-text-tx**  
-  Reference: *New Feature: Simpler, Faster Transaction Submission*  
-  (https://github.com/0slot-trade/cookbook/blob/main/simpler-faster.md)
+  Reference: [**New Feature: Simpler, Faster Transaction Submission**](https://github.com/0slot-trade/cookbook/blob/main/simpler-faster.md)
 
 - **binary-tx**  
-  Reference: *Binary-Tx: A More Faster Way for Tx Submission*  
-  (https://github.com/0slot-trade/cookbook/blob/main/binary-tx.md)
+  Reference: [**Binary-Tx: A More Faster Way for Tx Submission**](https://github.com/0slot-trade/cookbook/blob/main/binary-tx.md)
 
 Among these three methods, **binary-tx offers the lowest latency**, and therefore it is recommended that users choose **binary-tx** whenever possible when submitting transactions to 0slot.
 
----
 
 ## Why Binary-Tx Is Faster
 
@@ -32,8 +28,6 @@ Packet splitting leads to:
 - Additional network processing
 - Additional transmission time  
 ➡️ Ultimately resulting in **higher submission latency**.
-
----
 
 ### 2. Binary-Tx Avoids Packet Splitting
 With **binary-tx**, the client sends **raw binary transaction bytes** directly.
@@ -54,8 +48,13 @@ Additionally, binary-tx reduces:
 
 ➡️ Delivering **maximum efficiency** in both processing and network performance.
 
----
 
 ## Recommendation
 For optimal performance and minimal latency when submitting transactions through 0slot,  
 **binary-tx is the strongly recommended Transaction Submission method**.
+
+## Support
+For additional assistance, our support team is available through these channels:
+  * **Discord Support**: [Join our community](https://discord.com/invite/Qd6txfyS)
+  * **Twitter/X**: [Follow @0slot\_trade](https://x.com/0slot_trade)
+  * **Telegram**: [Message @kurt0slot](https://t.me/kurt0slot)
