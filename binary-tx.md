@@ -69,14 +69,7 @@ http://de.0slot.trade/txb?api-key=KEY
 ```
 
 * `KEY` is your **API Key / Token** provided by 0slot.
-* `de.0slot.trade` is one of 0slot’s global servers. 0slot provides multiple regional servers — test and choose the fastest one. 
-Below are the available 0slot server addresses by region:
-- **New York (NY):** `ny.0slot.trade`  
-- **Frankfurt (DE):** `de.0slot.trade`  
-- **Amsterdam, Netherlands (AMS NL):** `ams.0slot.trade`  
-- **Tokyo (JP):** `jp.0slot.trade`  
-- **Los Angeles (LA):** `la.0slot.trade`
-
+* `de.0slot.trade` is one of 0slot’s global servers. 0slot provides multiple regional servers, please contact our sales or technical support team to obtain the servers that best suits your needs.
 
 ### **Binary Transaction Payload**
 
