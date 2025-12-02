@@ -25,13 +25,7 @@ curl -X POST 'http://de.0slot.trade/txn?api-key=KEY' \
 Replace `KEY` in the URL with the **API KEY** or **TOKEN** provided by 0slot.
 
 **2. Server Selection:**
-In the example, `"de.0slot.trade"` is the server domain. We provide faster servers for different global locations. Please test and select the most suitable server.
-Below are the available 0slot server addresses by region:
-- **New York (NY):** `ny.0slot.trade`  
-- **Frankfurt (DE):** `de.0slot.trade`  
-- **Amsterdam, Netherlands (AMS NL):** `ams.0slot.trade`  
-- **Tokyo (JP):** `jp.0slot.trade`  
-- **Los Angeles (LA):** `la.0slot.trade`
+In the example, `"de.0slot.trade"` is the server domain. We provide faster servers for different global locations. Please contact our sales or technical support team to obtain the servers that best suits your needs.
 
 **3. Required Header:**
 You must specify the unique request header:
