@@ -1,4 +1,4 @@
-# Binary-Tx: A More Faster Way for Tx Submission
+# Binary-Tx: A Faster Way for Tx Submission
 
 0slot introduces a new, highly efficient transaction submission method called **Binary-Tx**.  
 By sending  **raw binary Solana transactions** directly to a 0slot endpoint, transactions can be submitted with significantly lower latency.
