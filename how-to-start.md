@@ -39,6 +39,8 @@ curl -X POST 'http://ny.0slot.trade?api-key=$TOKEN' \
    - **AMS NL**:  ams.0slot.trade
    - **Tokyo**:  jp.0slot.trade
    - **Los Angeles**: la.0slot.trade
+   
+**You can also contact our sales or technical support team to obtain the servers that best suits your needs.**
 
 ## 4. Error Codes  
 - **API Key Expired**
