@@ -38,7 +38,7 @@ If there are long intervals between calls, you can use the health endpoint to ma
 
 
 **5. Protocols:**
-Both **HTTP** and **HTTPS** are supported.
+Both **HTTP** and **HTTPS** are supported, but **HTTP** is slightly faster. 0slot recommends using **HTTP** as the first choice.
 
 **6. Anti-MEV and Secure Parameters:**
 The existing `anti-mev` and `secure` parameters remain valid.
