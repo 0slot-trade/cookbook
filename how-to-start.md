@@ -31,7 +31,7 @@ curl -X POST 'http://ny.0slot.trade?api-key=$TOKEN' \
 }'
   ```
 ## Important Notes:
-1) Use **http** instead of https! http is faster! You must use http to get faster speeds.  
+1) Both **HTTP** and **HTTPS** are supported, but **HTTP** is slightly faster. 0slot recommends using **HTTP** as the first choice. 
 2) `$UUID` is the unique identifier for this request.  
 3) We provide faster servers in different locations for users. Please test and select the most suitable server from the list below, then replace it in the URL above:  
    - **NY**:  ny.0slot.trade  
